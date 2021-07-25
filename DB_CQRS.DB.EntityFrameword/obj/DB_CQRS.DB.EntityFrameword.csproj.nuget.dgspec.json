@@ -1,0 +1,122 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/siphamandla_dev/repos/Learn/Architecture/Learn/DB_CQRS/src/DB_CQRS.DB.EntityFrameword/DB_CQRS.DB.EntityFrameword.csproj": {}
+  },
+  "projects": {
+    "/home/siphamandla_dev/repos/Learn/Architecture/Learn/DB_CQRS/src/DB_CQRS.DB.EntityFrameword/DB_CQRS.DB.EntityFrameword.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/siphamandla_dev/repos/Learn/Architecture/Learn/DB_CQRS/src/DB_CQRS.DB.EntityFrameword/DB_CQRS.DB.EntityFrameword.csproj",
+        "projectName": "DB_CQRS.DB.EntityFrameword",
+        "projectPath": "/home/siphamandla_dev/repos/Learn/Architecture/Learn/DB_CQRS/src/DB_CQRS.DB.EntityFrameword/DB_CQRS.DB.EntityFrameword.csproj",
+        "packagesPath": "/home/siphamandla_dev/.nuget/packages/",
+        "outputPath": "/home/siphamandla_dev/repos/Learn/Architecture/Learn/DB_CQRS/src/DB_CQRS.DB.EntityFrameword/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/siphamandla_dev/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/home/siphamandla_dev/repos/Learn/Architecture/Learn/DB_CQRS/src/DB_CQRS.Shared/DB_CQRS.Shared.csproj": {
+                "projectPath": "/home/siphamandla_dev/repos/Learn/Architecture/Learn/DB_CQRS/src/DB_CQRS.Shared/DB_CQRS.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/132/sdk/5.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/siphamandla_dev/repos/Learn/Architecture/Learn/DB_CQRS/src/DB_CQRS.Shared/DB_CQRS.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/siphamandla_dev/repos/Learn/Architecture/Learn/DB_CQRS/src/DB_CQRS.Shared/DB_CQRS.Shared.csproj",
+        "projectName": "DB_CQRS.Shared",
+        "projectPath": "/home/siphamandla_dev/repos/Learn/Architecture/Learn/DB_CQRS/src/DB_CQRS.Shared/DB_CQRS.Shared.csproj",
+        "packagesPath": "/home/siphamandla_dev/.nuget/packages/",
+        "outputPath": "/home/siphamandla_dev/repos/Learn/Architecture/Learn/DB_CQRS/src/DB_CQRS.Shared/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/siphamandla_dev/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/132/sdk/5.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
