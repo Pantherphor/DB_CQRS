@@ -1,6 +1,15 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <ItemGroup>
+    <PackageReference Include="DotNetCore.CAP" Version="5.1.2" />
+	<PackageReference Include="DotNetCore.CAP.Dashboard" Version="5.1.2" />
+	<PackageReference Include="DotNetCore.CAP.InMemoryStorage" Version="5.1.2" />
+    <PackageReference Include="MaiKeBing.CAP.ZeroMQ" Version="1.0.32" />
+    <PackageReference Include="MaiKeBing.HostedService.ZeroMQ" Version="1.0.32" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DB_CQRS.DB.EntityFrameword\DB_CQRS.DB.EntityFrameword.csproj" />
     <ProjectReference Include="..\DB_CQRS.Shared\DB_CQRS.Shared.csproj" />
   </ItemGroup>
 
