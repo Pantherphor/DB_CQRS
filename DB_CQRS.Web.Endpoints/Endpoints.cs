@@ -1,10 +1,4 @@
-﻿using DB_CQRS.Shared;
-using DotNetCore.CAP;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Routing;
-using Microsoft.Extensions.DependencyInjection;
-using System;
+﻿using Microsoft.AspNetCore.Builder;
 
 namespace DB_CQRS.Web.Endpoints
 {
