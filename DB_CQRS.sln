@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DB_CQRS.DB.EntityFrameword", "DB_CQRS.DB.EntityFrameword\DB_CQRS.DB.EntityFrameword.csproj", "{563170A7-0537-4731-A891-10E946807AC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DB_CQRS.DB.EntityFramework", "DB_CQRS.DB.EntityFrameword\DB_CQRS.DB.EntityFramework.csproj", "{563170A7-0537-4731-A891-10E946807AC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DB_CQRS.Web.Endpoints", "DB_CQRS.Web.Endpoints\DB_CQRS.Web.Endpoints.csproj", "{3A074A33-347A-4641-96B8-79A253C5C7F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DB_CQRS.Web.Endpoints", "DB_CQRS.Web.Endpoints\DB_CQRS.Web.Endpoints.csproj", "{3A074A33-347A-4641-96B8-79A253C5C7F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DB_CQRS.Shared", "DB_CQRS.Shared\DB_CQRS.Shared.csproj", "{D218B237-4D79-4987-8597-9FBEF72B41B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DB_CQRS.Shared", "DB_CQRS.Shared\DB_CQRS.Shared.csproj", "{D218B237-4D79-4987-8597-9FBEF72B41B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,9 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{563170A7-0537-4731-A891-10E946807AC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -58,5 +55,11 @@ Global
 		{D218B237-4D79-4987-8597-9FBEF72B41B9}.Release|x64.Build.0 = Release|Any CPU
 		{D218B237-4D79-4987-8597-9FBEF72B41B9}.Release|x86.ActiveCfg = Release|Any CPU
 		{D218B237-4D79-4987-8597-9FBEF72B41B9}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6AB9B8C3-B846-499D-938A-B6453491639F}
 	EndGlobalSection
 EndGlobal

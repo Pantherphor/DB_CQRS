@@ -6,10 +6,11 @@
 	<PackageReference Include="DotNetCore.CAP.InMemoryStorage" Version="5.1.2" />
     <PackageReference Include="MaiKeBing.CAP.ZeroMQ" Version="1.0.32" />
     <PackageReference Include="MaiKeBing.HostedService.ZeroMQ" Version="1.0.32" />
+	<PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DB_CQRS.DB.EntityFrameword\DB_CQRS.DB.EntityFrameword.csproj" />
+    <ProjectReference Include="..\DB_CQRS.DB.EntityFrameword\DB_CQRS.DB.EntityFramework.csproj" />
     <ProjectReference Include="..\DB_CQRS.Shared\DB_CQRS.Shared.csproj" />
   </ItemGroup>
 

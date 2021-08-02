@@ -13,16 +13,7 @@ namespace DB_CQRS.Web.Endpoints
         public static void MapSaveOrders(this IApplicationBuilder app)
         {
             app.UseEndpoints(endpoints =>
-                endpoints.MapPost("/save/order", async context =>
-                {
-                    var orderPlaced = new OrderPlaced
-                    {
-                        OrderId = Guid.NewGuid()
-                    };
-                    await context.RequestServices.GetService<ICapPublisher>().PublishAsync(nameof(OrderPlaced), orderPlaced);
-
-                    await context.Response.WriteAsync($"Order {orderPlaced.OrderId} has been placed.");
-                }));
+                endpoints.MapControllers());
         }
     }
 }

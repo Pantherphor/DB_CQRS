@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Configuration;
 using DB_CQRS.DB.EntityFrameword;
+using Microsoft.OpenApi.Models;
 
 namespace DB_CQRS.Web.Endpoints
 {
@@ -16,13 +17,10 @@ namespace DB_CQRS.Web.Endpoints
             Configuration = configuration;
         }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
-        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddEFDatabase();
             services.AddHostedZeroMQ(Configuration);
-            //services.AddHostedZeroMQ(Configuration);
             services.AddCap(config =>
             {
                 config.ConsumerThreadCount = 1;
@@ -36,14 +34,21 @@ namespace DB_CQRS.Web.Endpoints
                 });
                 config.UseDashboard();
             });
+            services.AddControllers();
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "DB_CQRS UI", Version = "v1", Description = "Try the Post execution and go to: https://localhost:5001/cap to get to the CAP Dashboard." });
+            });
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseSwagger();
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "DB_CQRS.UI v1"));
             }
 
             app.UseRouting();
