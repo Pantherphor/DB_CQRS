@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 
-namespace DB_CQRS.DB.EntityFrameword
+namespace DB_CQRS.DB.CommandQueryHandler
 {
     public static class Endpoints
     {

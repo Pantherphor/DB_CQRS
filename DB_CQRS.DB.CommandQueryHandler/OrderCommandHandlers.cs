@@ -2,7 +2,7 @@
 using DotNetCore.CAP;
 using Microsoft.Extensions.Logging;
 
-namespace DB_CQRS.DB.EntityFrameword
+namespace DB_CQRS.DB.CommandQueryHandler
 {
     [CapSubscribe(nameof(OrderPlaced))]
     public class OrderCommandHandlers : ICapSubscribe

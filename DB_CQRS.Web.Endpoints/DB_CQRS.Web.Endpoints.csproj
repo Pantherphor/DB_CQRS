@@ -10,7 +10,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DB_CQRS.DB.EntityFrameword\DB_CQRS.DB.EntityFramework.csproj" />
+    <ProjectReference Include="..\DB_CQRS.DB.CommandQueryHandler\DB_CQRS.DB.CommandQueryHandler.csproj" />
+    <ProjectReference Include="..\DB_CQRS.DB.Driver.EntityFramework\DB_CQRS.DB.Driver.EntityFramework.csproj" />
     <ProjectReference Include="..\DB_CQRS.Shared\DB_CQRS.Shared.csproj" />
   </ItemGroup>
 

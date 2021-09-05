@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace DB_CQRS.DB.EntityFrameword
+namespace DB_CQRS.DB.CommandQueryHandler
 {
     public static class ConfigureServices
     {

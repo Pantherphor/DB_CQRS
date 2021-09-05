@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Configuration;
-using DB_CQRS.DB.EntityFrameword;
+using DB_CQRS.DB.CommandQueryHandler;
 
 namespace DB_CQRS.Web.Endpoints
 {
